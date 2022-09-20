@@ -14,7 +14,14 @@
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container">
             <!-- Nama : nama panggilan kalian --> <a class="navbar-brand fw-bold" href="/gd4_c_0731">PHP - Mikael Tatas Pradipta</a>
-            <div class="d-flex justify-content-end"> <button class="btn btn-primary me-2" type="button"> <a class="text-light" style="text-decoration: none" href="./page/registerPage.php">Sign Up</a> </button> <button class="btn btn-warning ms-2" type="button" href="./loginPage.php"> <a class="text-light" style="text-decoration: none" href="./page/loginPage.php">Login</a> </button> </div>
+            <div class="d-flex justify-content-end"> 
+                <button class="btn btn-primary me-2" type="button"> 
+                    <a class="text-light" style="text-decoration: none" href="./page/registerPage.php">Sign Up</a> 
+                </button> 
+                <button class="btn btn-warning ms-2" type="button" href="./loginPage.php"> 
+                    <a class="text-light" style="text-decoration: none" href="./page/loginPage.php">Login</a> 
+                </button> 
+            </div>
         </div>
     </nav>
     <div class="bg">
