@@ -6,38 +6,34 @@ include '../component/sidebar.php'
         <h4>Tambah Movies</h4>
     </div>
     <hr>
-    <form>
+    <form action="../process/tambahMoviesProcess.php" method="POST">
         <div class="mb-3">
             <label for="inputJudul" class="form-label">Judul</label>
-            <input type="text" class="form-control" id="inputEmail">
+            <input type="text" class="form-control" id="inputEmail" name="inputEmail">
         </div>
         <div class="mb-3">
-            <label for="inputGenre" class="form-label">Genre</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                    <li><a class="dropdown-item" href="#">Romance</a></li>
-                </ul>
-            </div>
+            <div class="mb-3"> <label for="inputGenre" class="form-label">Genre</label> <select class="form-select" aria-label="Default select example" name="inputGenre" id="inputGenre">
+                    <option value="Action">Action</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Drama">Drama</option>
+                </select> </div>
         </div>
         <div class="mb-3">
             <label for="inputRelease" class="form-label">Release</label>
-            <input type="text" class="form-control" id="inputRelease">
+            <input type="text" class="form-control" id="inputRelease" name="inputRelease">
         </div>
         <div class="mb-3">
             <label for="inputSeason" class="form-label">Season</label>
-            <input type="text" class="form-control" id="inputSeason">
+            <input type="text" class="form-control" id="inputSeason" name="inputSeason">
         </div>
         <div class="mb-3">
             <label for="inputSynopsis" class="form-label">Synopsis</label>
-            <input type="text" class="form-control" id="inputSynopsis">
+            <input type="text" class="form-control" id="inputSynopsis" name="inputSynopsis">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+
     </form>
+
 </div>
 </aside>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
